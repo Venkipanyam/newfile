@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="otp.css">
+    <body>
+      
+    
+      <center>
+      <form action="#" class="container">
+           <div>
+            <h1>Log-In</h1>
+             <div class="mydom">
+                  <label for="">User:</label></div>
+                  <input type="text" class="form-control" id="myuser" autocomplete="off">
+             </div>
+             <div>
+               <label for="">Password:</label></div>
+               <input type="password" class="form-control" id="pass" autocomplete="off">
+          </div>
+
+           <div>
+            <button class="mybutton" onclick="mydisplay()">LOGIN</button>
+            <button id="otpdisplay" class="newbtn" onclick="generateOTP()">Get OTP</button>
+            <p id="otpGenerate"></p>
+           </div>
+               <div class="myinput">
+                  <input type="text" class="form-control" autocomplete="off" maxlength="1">
+                  <input type="text" class="form-control" autocomplete="off" maxlength="1">
+                  <input type="text" class="form-control" autocomplete="off" maxlength="1">
+                  <input type="text" class="form-control" autocomplete="off" maxlength="1">
+               </div>
+               <div>
+                  <p >Time Left:<span id="countdown" >10</span> seconds</p>
+                  <button  id="hidden" class="mybtn" onclick="updateTime()">Get Sec</button>
+               </div>
+           </div>
+      </form>
+      </center>
+      <script src="otp.js"></script>
+</body>
+</html>
